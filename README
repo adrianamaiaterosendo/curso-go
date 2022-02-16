@@ -1,0 +1,34 @@
+- Hands On Golang
+
+Primeiro ponto vamos conhecer a estrutura do GO
+- Os códigos são organizados em pacotes
+- Declaramos imports para usar eles
+
+import "fmt" ou com ()
+
+- Porta de entrada é a função main(){}
+
+fmt.Printf("Temos um problema %S!")
+
+- Comandos no terminal
+	- go run main.go
+	- go init pasta/main.go
+	- go version
+	- godoc -http=:6060
+	- go env
+	- go build main.go
+	- go get -u github.com/go-sql-driver/mysql
+
+- Constantes e Variáveis
+  - para declarar variáveis não preciso colocar o tipo
+    var raio = 3.2
+    area := 3.2
+  - Em GO uma vez que vc declara uma variável e não use ele
+dá erro de compilação
+  - posso declarar mais de uma variável no mesmo var
+
+- Impressão no console
+	- Println - Pula linha
+	- Print - não pula
+	- fmt.Sprint(x) - transforma em string
+
