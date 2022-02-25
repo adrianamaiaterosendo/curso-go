@@ -2,11 +2,11 @@ package main
 
 import "fmt"
 
-func somar(num1 float64, num2 float64) {
+func somar(num1 float64, num2 float64) float64 {
 
 	resultado := num1 + num2
 
-	imprimir(resultado)
+	return resultado
 
 }
 
@@ -14,8 +14,14 @@ func imprimir(num float64) {
 	fmt.Println(num)
 }
 
+func doisRetornos() (float64, int) {
+	return 2.3, 2
+}
+
 func main() {
 
-	somar(10, 30)
-
+	_, teste := doisRetornos()
+	resultado := somar(10, 30)
+	imprimir(resultado)
+	imprimir(float64(teste))
 }
