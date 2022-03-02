@@ -34,6 +34,21 @@ func trocar(p1, p2 int) (segundo int, primeiro int) {
 	return //retorno limpo
 }
 
+//função variática
+func media(numeros ...float64) float64 {
+	total := 0.0
+
+	if len(numeros) <= 0 {
+		return 0
+	}
+
+	for _, num := range numeros {
+		total += num
+	}
+
+	return total / float64(len(numeros))
+}
+
 func main() {
 
 	_, teste := doisRetornos()
@@ -47,4 +62,8 @@ func main() {
 	testeSub := subtracao(10, 5)
 
 	imprimir(float64(testeSub))
+
+	imprimir(media(3, 6, 5, 4.6, 10))
+
+	imprimir(media(0))
 }
