@@ -12,4 +12,13 @@ func main() {
 	*p++
 
 	fmt.Println(p, *p, i)
+
+	fmt.Println(incrPonteiro(&i))
+
+}
+
+func incrPonteiro(n *int) int {
+	*n++
+
+	return *n
 }
