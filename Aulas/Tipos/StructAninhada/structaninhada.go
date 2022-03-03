@@ -28,7 +28,7 @@ func main() {
 			{
 				produtoID: 1,
 				qtde:      10,
-				preco:     5.50,
+				preco:     5,
 			},
 			{
 				produtoID: 2,
